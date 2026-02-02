@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gangiya Enterprises</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Gangiya Enterprises</h1>
+  <p>Premium Construction Partner</p>
+</header>
+
+<section class="dashboard">
+
+  <div class="card" onclick="order('Materials')">
+    🧱
+    <h2>Materials</h2>
+    <p>Balu • Gitti • Cement • Rod</p>
+  </div>
+
+  <div class="card" onclick="order('Vehicle Services')">
+    🚜
+    <h2>Vehicle Services</h2>
+    <p>JCB • Tractor • Hywa</p>
+  </div>
+
+  <div class="card" onclick="call()">
+    📞
+    <h2>Contact</h2>
+    <p>Tap to Call</p>
+  </div>
+
+</section>
+
+<footer>
+📍 Gawan, Tisri, Giridih, Jharkhand
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html> <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
